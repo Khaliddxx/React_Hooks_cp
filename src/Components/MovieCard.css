@@ -1,4 +1,3 @@
-/* .movie-card {
-  height: 800px;
-  width: 500px;
-} */
+.movie-card {
+  border: 1px solid grey;
+}

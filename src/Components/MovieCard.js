@@ -7,8 +7,7 @@ const MovieCard = () => {
   const [data, setData] = useState({
     title: "title",
     description: "description",
-    posterURL:
-      "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    posterURL: "https://via.placeholder.com/200x300",
     rating: "6",
   });
 

@@ -8,20 +8,48 @@ const MovieList = () => {
       <Container>
         <Row>
           <Col>
-            <MovieCard />
-            <button onClick={MovieCard.handleClick}>Click Me</button>
+            <MovieCard
+              t={"Paw Patrol"}
+              d={"Paramont+ Studios."}
+              url={
+                "https://www.joblo.com/assets/images/joblo/posters/2021/06/rsz_paw_patrol_the_movie_poster.jpg"
+              }
+              rate={"7"}
+            />
           </Col>
           <Col>
-            <MovieCard />
+            <MovieCard
+              t={"Shang-Chi"}
+              d={"Marvel Cinematic Universe"}
+              url={
+                "https://www.joblo.com/assets/images/joblo/posters/2021/06/Shang-Chi-poster-4062076.jpg"
+              }
+              rate={"8"}
+            />
           </Col>
           <Col>
-            <MovieCard />
+            <MovieCard
+              t={"Army of The Dead"}
+              d="A group of mercenaries plot a heist on a Las Vegas casino during a zombie outbreak."
+              url="https://www.joblo.com/assets/images/joblo/posters/2021/04/army-of-the-dead-poster.jpg"
+              rate={"8.5"}
+            />
           </Col>
           <Col>
-            <MovieCard />
+            <MovieCard
+              t={"Concrete Cowboy"}
+              d={"urban horseback riding."}
+              url="https://www.joblo.com/assets/images/joblo/posters/2021/03/concrete-cowboy-poster-netflix-idris-elba.jpg"
+              rate={"8"}
+            />
           </Col>
           <Col>
-            <MovieCard />
+            <MovieCard
+              t={"Voyagers"}
+              d={"the future of the human race in dange"}
+              url="https://www.joblo.com/assets/images/joblo/posters/2021/03/voyagers-151251.jpg"
+              rate={"9"}
+            />
           </Col>
         </Row>
       </Container>

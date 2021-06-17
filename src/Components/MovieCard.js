@@ -13,10 +13,10 @@ const MovieCard = (props) => {
 
   // const handleClick = () =>
   //   setData({
-  //     title: props.t,
-  //     description: props.d,
-  //     posterURL: props.url,
-  //     rating: props.rate,
+  //     title: "",
+  //     description: "",
+  //     posterURL: "",
+  //     rating: "",
   //   });
 
   return (

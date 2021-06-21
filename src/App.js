@@ -11,6 +11,7 @@ function App() {
   const [data, setData] = useState(movies);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [filteredMovies, setFilteredMovies] = useState([]);
 
   return (
     <div className="App">

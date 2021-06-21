@@ -67,9 +67,9 @@ function App() {
             onClick={() => {
               setData((prev) => {
                 prev.push({
-                  title: "ahmed",
-                  description: "ahmed",
-                  posterURL: "ahmed",
+                  title: "Title",
+                  description: "Title",
+                  posterURL: "https://via.placeholder.com/200x300",
                   rating: 10,
                 });
                 return [...prev];

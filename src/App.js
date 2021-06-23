@@ -11,7 +11,6 @@ function App() {
   const [data, setData] = useState(movies);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [filteredMovies, setFilteredMovies] = useState([]);
 
   return (
     <div className="App">
@@ -50,6 +49,10 @@ function App() {
               <Form.Control placeholder="URL of Movie Poster" />
             </Form.Group>
 
+            <Form.Group>
+              <Form.File id="upload-img" label="Upload movie poster" />
+            </Form.Group>
+
             <Form.Group controlId="movie-rating">
               <Form.Label>Rating</Form.Label>
               <Form.Control placeholder="Movie's Rating (out of 10)" />
@@ -67,8 +70,8 @@ function App() {
             onClick={() => {
               setData((prev) => {
                 prev.push({
-                  title: "Title",
-                  description: "Title",
+                  title: "ahmed",
+                  description: "ahmed",
                   posterURL: "https://via.placeholder.com/200x300",
                   rating: 10,
                 });

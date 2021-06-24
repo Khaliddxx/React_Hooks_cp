@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useRef } from "react";
 import MovieCard from "./Components/MovieCard";
 import MovieList from "./Components/MovieList";
-
 import { movies } from "./movies";
 import AddMovieModal from "./Components/AddMovieModal";
 

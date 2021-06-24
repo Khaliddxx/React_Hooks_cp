@@ -37,7 +37,12 @@ function App() {
           <Form>
             <Form.Group controlId="movie-name">
               <Form.Label>Movie Name</Form.Label>
-              <Form.Control placeholder="Enter Movie Name" />
+              <Form.Control
+                placeholder="Enter Movie Name"
+                // Appending the input to movies through a previous state
+                // onChange={(e) => movies.setData({ val: e.target.title })}
+                // type="text"
+              />
             </Form.Group>
 
             <Form.Group controlId="movie-details">

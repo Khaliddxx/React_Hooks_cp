@@ -7,14 +7,14 @@ import { movies } from "./movies";
 import AddMovieModal from "./Components/AddMovieModal";
 
 function App() {
-  const [data, setData] = useState(movies);
+    const [data, setData] = useState(movies);
 
-  return (
-    <div className="App">
-      <MovieList data={data} />
-      <AddMovieModal />
-    </div>
-  );
+    return (
+        <div className="App">
+            <MovieList data={data} />
+            <AddMovieModal onAdd={setData} />
+        </div>
+    );
 }
 
 export default App;

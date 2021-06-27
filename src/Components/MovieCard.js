@@ -29,7 +29,10 @@ const MovieCard = (props) => {
           <h5 class="card-title">{data.title}</h5>
           <p class="card-text">{data.description}</p>
         </div>
-        <span className="card-footer">{data.rating}</span>
+        <span className="card-footer" style={{ textAlign: "right" }}>
+          <i class="fas fa-star-half-alt"></i>
+          {data.rating}/10
+        </span>
       </div>
     </>
   );

@@ -7,14 +7,14 @@ const MovieList = ({ data }) => {
     <div className="container">
       <div className="row">
         {data.map((movie) => (
-          <Col style={{ marginBottom: 30 }}>
+          <div className="col" style={{ marginBottom: 30 }}>
             <MovieCard
               t={movie.title}
               d={movie.description}
               url={movie.posterURL}
               rate={movie.rating}
             />
-          </Col>
+          </div>
         ))}
       </div>
     </div>

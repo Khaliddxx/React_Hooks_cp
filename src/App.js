@@ -28,8 +28,9 @@ function App() {
 
   return (
     <div className="App">
-      <AddMovieModal onAdd={setData} />
+      <AddMovieModal onAdd={setFilteredMovies} />
       <input
+        style={{ marginBottom: 50 }}
         type="range"
         value={range * 10}
         class="slider"

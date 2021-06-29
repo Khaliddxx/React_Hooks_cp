@@ -12,7 +12,6 @@ function App() {
 
   useEffect(() => {
     clearFilters();
-    // eslint-disable-next-line
   }, [movies]);
 
   const clearFilters = () => {
@@ -22,7 +21,7 @@ function App() {
 
   const filter = () => {
     let newMovies = movies;
-    newMovies = newMovies.filter((m) => m.rating <= range);
+    newMovies = newMovies.filter((m) => m.rating == range);
     setFilteredMovies([...newMovies]);
   };
 
@@ -39,6 +38,9 @@ function App() {
       ></input>
       <Button className="mr-3" onClick={filter}>
         Apply Filter
+      </Button>
+      <Button className="mr-3" onClick={clearFilters}>
+        Clear Filter
       </Button>
       <span className="m-auto">{range}</span>
       <MovieList data={filteredMovies} />
